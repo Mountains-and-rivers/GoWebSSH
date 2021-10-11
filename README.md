@@ -64,7 +64,7 @@ cd ../../gossh
 
 go env -w GOPROXY=https://goproxy.cn,direct
 
-go get
+go mod tidy
 
 go build
 
