@@ -9,7 +9,7 @@
         <br />
         <el-link
           type="primary"
-          href="https://github.com/Mountains-and-rivers"
+          href="https://github.com/o8oo8o/"
           target="_blank"
           >GitHub</el-link
         >

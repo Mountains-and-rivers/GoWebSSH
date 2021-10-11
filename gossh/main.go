@@ -1442,7 +1442,8 @@ func (file File) GET(context *HttpContext) {
 			pathInfo["dir"] = fullPath
 			paths = append(paths, pathInfo)
 		}
-		return paths
+                fmt.Println(paths)
+		return  paths
 	}
 
 	data := map[string]interface{}{

@@ -666,7 +666,21 @@ function listDir(dir: string, h: Host) {
     .then((res) => res.json())
     .then((json) => {
       if (json.code === 0) {
-        data.dir_info = json.data;
+	 var fileName:any;
+         var temp:any;
+         fileName = json.data.files;
+         console.log(fileName)
+      
+         for (var i=0; i < fileName.length;i++) {
+               temp = fileName[i]
+         }
+          
+         json.data.files.length = 0;
+         (json.data.files)[0] = temp;
+         console.log(temp) 
+         console.log("122222222222222222222222222222222222221")
+         console.log(json.data)
+         data.dir_info = json.data;
       }
     });
 }
@@ -1087,7 +1101,7 @@ function toManage() {
 
 // 跳转到管理页面
 function toGitHub() {
-  window.open("https://github.com/Mountains-and-rivers/GoWebSSH", "_blank");
+  window.open("https://github.com/o8oo8o/GoWebSSH", "_blank");
 }
 
 export default defineComponent({
