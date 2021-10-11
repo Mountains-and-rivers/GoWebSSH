@@ -1087,7 +1087,7 @@ function toManage() {
 
 // 跳转到管理页面
 function toGitHub() {
-  window.open("https://github.com/o8oo8o/GoWebSSH", "_blank");
+  window.open("https://github.com/Mountains-and-rivers/GoWebSSH", "_blank");
 }
 
 export default defineComponent({
